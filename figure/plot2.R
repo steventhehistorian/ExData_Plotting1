@@ -41,7 +41,9 @@ assignment_One_Raw_Data$Time2 <- "NA"
 februaryData <- filter(assignment_One_Raw_Data, Date == ymd("2007-02-01") |  Date ==ymd("2007-02-02"))
 
 par(mfrow=c(1,1))
-png("plot2.png")
+png(filename = "plot2.png", 
+    width = 480, height = 480, 
+    units = "px")
 ## Here's the plot
 plot(februaryData$Time3, februaryData$Global_active_power, type = "l" ,
      xlab = c(""),

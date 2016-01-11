@@ -46,7 +46,9 @@ par(mfrow=c(2,2))
 ## Set margins s.t. all plts wil fit.
 par(mar = rep(2, 4))
 
-png("plot4.png")
+png(filename = "plot4.png", 
+    width = 480, height = 480, 
+    units = "px")
 ## Plot 1,1
 plot(februaryData$Time3, februaryData$Global_active_power, type = "l" ,
      xlab = c(""),

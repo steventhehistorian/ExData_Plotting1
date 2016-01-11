@@ -34,7 +34,9 @@ rm(assignment_One_Raw_Data)
 februaryData <- mutate(februaryData, Global_active_power = as.numeric(Global_active_power))
 
 par(mfrow=c(1,1))
-png("plot1.png")
+png(filename = "plot1.png", 
+    width = 480, height = 480, 
+    units = "px")
 # Plot ONE!  Histogram wit' da RED BARZZZZZZZZZZ!!!!!!!
 hist(februaryData$Global_active_power, col = "red",
      main = "Global Active Power",
