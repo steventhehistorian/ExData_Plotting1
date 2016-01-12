@@ -1,4 +1,4 @@
-
+# There are just my personal notes, not part of the assignmnent.
 ###Here's a better way fo doing date time
 ##### Create a datetime column
 df$Datetime <- as.POSIXct(paste(as.Date(df$Date), df$Time))
